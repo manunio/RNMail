@@ -1,6 +1,7 @@
 import React from "react";
-import {Container, Text} from "@/atoms";
+import {Container} from "@/atoms";
 import NoteList from "@/components/note-list";
+import HeaderBar from "@/components/header-bar";
 
 export default function MainScreen() {
     return (
@@ -8,6 +9,7 @@ export default function MainScreen() {
         // @ts-ignore
         <Container justifyContent="center" alignItems="center">
             <NoteList/>
+            <HeaderBar/>
         </Container>
     )
 }
