@@ -1,13 +1,13 @@
-import {Text, View} from "react-native";
 import React from "react";
-import {Box} from "@/atoms";
+import {Container, Text} from "@/atoms";
+import NoteList from "@/components/note-list";
 
 export default function MainScreen() {
     return (
-        <Box flex={1} justifyContent="center" alignItems="center" >
-            <Text>
-                Hellooooooo, World!
-            </Text>
-        </Box>
+        // TODO: find solution to below ts-ignore
+        // @ts-ignore
+        <Container justifyContent="center" alignItems="center">
+            <NoteList/>
+        </Container>
     )
 }
